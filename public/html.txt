@@ -1,0 +1,254 @@
+What does HTML stand for?
+A. Hyper Text Markup Language
+B. Home Tool Markup Language
+C. Hyperlinks and Text Markup Language
+ANSWER: D
+
+Who is making the Web standards?
+A. The World Wide Web Consortium
+B. Microsoft
+C. Google
+D. Mozilla
+ANSWER: D
+
+Choose the correct HTML element for the largest heading:
+A. <head>
+B. <heading>
+C. <h1>
+D. <h6>
+ANSWER: D
+
+What is the correct HTML element for inserting a line break?
+A. <break>
+B. <br>
+C. <lb>
+ANSWER: D
+
+What is the correct HTML for adding a background color?
+A. <body style="background-color:yellow;">
+B. <body bg="yellow">
+C. <background>yellow</background>
+ANSWER: D
+
+Choose the correct HTML element to define important text
+A. <strong>
+B. <important>
+C. <i>
+D. <b>
+ANSWER: D
+
+Choose the correct HTML element to define emphasized text
+A. <italic>
+B. <em>
+C. <i>
+ANSWER: D
+
+What is the correct HTML for creating a hyperlink?
+A. <a href="http://www.w3schools.com">W3Schools</a>
+B. <a name="http://www.w3schools.com">W3Schools.com</a>
+C. <a>http://www.w3schools.com</a>
+D. <a url="http://www.w3schools.com">W3Schools.com</a>
+ANSWER: D
+
+Which character is used to indicate an end tag?
+A. /
+B. ^
+C. *
+D. <
+ANSWER: D
+
+How can you open a link in a new tab/browser window?
+A. <a href="url" target="new">
+B. <a href="url" target="_blank">
+C. <a href="url" new>
+ANSWER: D
+
+Which of these elements are all <table> elements?
+A. <thead><body><tr>
+B. <table><head><tfoot>
+C. <table><tr><td>
+D. <table><tr><tt>
+ANSWER: D
+
+Inline elements are normally displayed without starting a new line.
+A. True
+B. False
+ANSWER: D
+
+How can you make a numbered list?
+A. <ul>
+B. <dl>
+C. <list>
+D. <ol>
+ANSWER: D
+
+How can you make a bulleted list?
+A. <dl>
+B. <ul>
+C. <ol>
+D. <list>
+ANSWER: D
+
+What is the correct HTML for making a checkbox?
+A. <checkbox>
+B. <input type="checkbox">
+C. <check>
+D. <input type="check">
+ANSWER: D
+
+What is the correct HTML for making a text input field?
+A. <textfield>
+B. <input type="textfield">
+C. <input type="text">
+D. <textinput type="text">
+ANSWER: D
+
+What is the correct HTML for making a drop-down list?
+A. <input type="dropdown">
+B. <list>
+C. <select>
+D. <input type="list">
+ANSWER: D
+
+What is the correct HTML for making a text area?
+A. <textarea>
+B. <input type="textarea">
+C. <input type="textbox">
+ANSWER: D
+
+What is the correct HTML for inserting an image?
+A. <img src="image.gif" alt="MyImage">
+B. <image src="image.gif" alt="MyImage">
+C. <img alt="MyImage">image.gif</img>
+D. <img href="image.gif" alt="MyImage">
+ANSWER: D
+
+What is the correct HTML for inserting a background image?
+A. <background img="background.gif">
+B. <body style="background-image:url(background.gif)">
+C. <body bg="background.gif">
+ANSWER: D
+
+An <iframe> is used to display a web page within a web page.
+A. There is no such thing as an <iframe>
+B. True
+C. False
+ANSWER: D
+
+HTML comments start with <!-- and end with -->
+A. False
+B. True
+ANSWER: D
+
+Block elements are normally displayed without starting a new line.
+A. True
+B. False
+ANSWER: D
+
+Which HTML element defines the title of a document?
+A. <title>
+B. <meta>
+C. <head>
+ANSWER: D
+
+Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?
+A. src
+B. longdesc
+C. alt
+D. title
+ANSWER: D
+
+Which doctype is correct for HTML5?
+A. <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd">
+B. <!DOCTYPE HTML5>
+C. <!DOCTYPE html>
+ANSWER: D
+
+Which HTML element is used to specify a footer for a document or section?
+A. <section>
+B. <bottom>
+C. <footer>
+ANSWER: D
+
+In HTML, you can embed SVG elements directly into an HTML page.
+A. False
+B. True
+ANSWER: D
+
+What is the correct HTML element for playing video files?
+A. <movie>
+B. <video>
+C. <media>
+ANSWER: D
+
+What is the correct HTML element for playing audio files?
+A. <audio>
+B. <sound>
+C. <mp3>
+ANSWER: D
+
+The HTML global attribute, "contenteditable" is used to:
+A. Specify whether the content of an element should be editable or not
+B. Update content from the server
+C. Specifies a context menu for an element. The menu appears when a user right-clicks on the element
+D. Return the position of the first found occurrence of content inside a string
+ANSWER: D
+
+In HTML, onblur and onfocus are:
+A. HTML elements
+B. Style attributes
+C. Event attributes
+ANSWER: D
+
+Graphics defined by SVG is in which format?
+A. CSS
+B. XML
+C. HTML
+ANSWER: D
+
+The HTML <canvas> element is used to:
+A. manipulate data in MySQL
+B. create draggable elements
+C. draw graphics
+D. display database records
+ANSWER: D
+
+In HTML, which attribute is used to specify that an input field must be filled out?
+A. validate
+B. formvalidate
+C. required
+D. placeholder
+ANSWER: D
+
+Which input type defines a slider control?
+A. controls
+B. slider
+C. search
+D. range
+ANSWER: D
+
+Which HTML element is used to display a scalar measurement within a range?
+A. <range>
+B. <meter>
+C. <measure>
+D. <gauge>
+ANSWER: D
+
+Which HTML element defines navigation links?
+A. <navigation>
+B. <navigate>
+C. <nav>
+ANSWER: D
+
+In HTML, what does the <aside> element define?
+A. Content aside from the page content
+B. The ASCII character-set; to send information between computers on the Internet
+C. A navigation list to be shown at the left side of the page
+ANSWER: D
+
+Which HTML element is used to specify a header for a document or section?
+A. <header>
+B. <section>
+C. <top>
+D. <head>
+ANSWER: D

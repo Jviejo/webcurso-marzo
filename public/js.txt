@@ -1,0 +1,159 @@
+Inside which HTML element do we put the JavaScript?
+A. <script>
+B. <js>
+C. <scripting>
+D. <javascript>
+ANSWER: D
+
+What is the correct JavaScript syntax to change the content of the HTML element below?
+A. document.getElement("p").innerHTML = "Hello World!";
+B. document.getElementByName("p").innerHTML = "Hello World!";
+C. #demo.innerHTML = "Hello World!";
+D. document.getElementById("demo").innerHTML = "Hello World!";
+ANSWER: D
+
+Where is the correct place to insert a JavaScript?
+A. The <body> section
+B. The <head> section
+C. Both the <head> section and the <body> section are correct
+ANSWER: D
+
+What is the correct syntax for referring to an external script called "xxx.js"?
+A. <script href="xxx.js">
+B. <script src="xxx.js">
+C. <script name="xxx.js">
+ANSWER: D
+
+The external JavaScript file must contain the <script> tag.
+A. False
+B. True
+ANSWER: D
+
+How do you write "Hello World" in an alert box?
+A. msg("Hello World");
+B. msgBox("Hello World");
+C. alertBox("Hello World");
+D. alert("Hello World");
+ANSWER: D
+
+How do you create a function in JavaScript?
+A. function:myFunction()
+B. function = myFunction()
+C. function myFunction()
+ANSWER: D
+
+How do you call a function named "myFunction"?
+A. call myFunction()
+B. myFunction()
+C. call function myFunction()
+ANSWER: D
+
+How to write an IF statement in JavaScript?
+A. if i == 5 then
+B. if (i == 5)
+C. if i = 5
+D. if i = 5 then
+ANSWER: D
+
+How to write an IF statement for executing some code if "i" is NOT equal to 5?
+A. if i =! 5 then
+B. if i <> 5
+C. if (i != 5)
+D. if (i <> 5)
+ANSWER: D
+
+How does a WHILE loop start?
+A. while i = 1 to 10
+B. while (i <= 10; i++)
+C. while (i <= 10)
+ANSWER: D
+
+How does a FOR loop start?
+A. for i = 1 to 5
+B. for (i <= 5; i++)
+C. for (i = 0; i <= 5; i++)
+D. for (i = 0; i <= 5)
+ANSWER: D
+
+How can you add a comment in a JavaScript?
+A. <!--This is a comment-->
+B. 'This is a comment
+C. //This is a comment
+ANSWER: D
+
+How to insert a comment that has more than one line?
+A. //This comment has
+more than one line//
+B. /*This comment has
+more than one line*/
+C. <!--This comment has
+more than one line-->
+ANSWER: D
+
+What is the correct way to write a JavaScript array?
+A. var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")
+B. var colors = "red", "green", "blue"
+C. var colors = (1:"red", 2:"green", 3:"blue")
+D. var colors = ["red", "green", "blue"]
+ANSWER: D
+
+How do you round the number 7.25, to the nearest integer?
+A. Math.rnd(7.25)
+B. rnd(7.25)
+C. Math.round(7.25)
+D. round(7.25)
+ANSWER: D
+
+How do you find the number with the highest value of x and y?
+A. ceil(x, y)
+B. top(x, y)
+C. Math.ceil(x, y)
+D. Math.max(x, y)
+ANSWER: D
+
+What is the correct JavaScript syntax for opening a new window called "w2" ?
+A. w2 = window.open("http://www.w3schools.com");
+B. w2 = window.new("http://www.w3schools.com");
+ANSWER: D
+
+JavaScript is the same as Java.
+A. True
+B. False
+ANSWER: D
+
+How can you detect the client's browser name?
+A. browser.name
+B. navigator.appName
+C. client.navName
+ANSWER: D
+
+Which event occurs when the user clicks on an HTML element?
+A. onchange
+B. onmouseclick
+C. onmouseover
+D. onclick
+ANSWER: D
+
+How do you declare a JavaScript variable?
+A. v carName;
+B. var carName;
+C. variable carName;
+ANSWER: D
+
+Which operator is used to assign a value to a variable?
+A. =
+B. *
+C. -
+D. x
+ANSWER: D
+
+What will the following code return: Boolean(10 > 9)
+A. true
+B. NaN
+C. false
+ANSWER: D
+
+Is JavaScript case-sensitive?
+A. Yes
+B. No
+ANSWER: D

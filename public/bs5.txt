@@ -1,0 +1,170 @@
+The .container class provides a full width container, spanning the entire width of the screen
+A. False
+B. True
+ANSWER: D
+
+Which class provides a responsive fixed width container?
+A. .container
+B. .container-fluid
+C. .container-responsive
+D. .container-fixed
+ANSWER: D
+
+Which contextual class is used to create an orange text color?
+A. .text-warning
+B. .txt-orange
+C. .bg-warning
+D. .txt-warning
+ANSWER: D
+
+The Bootstrap grid system is based on how many columns?
+A. 9
+B. 6
+C. 3
+D. 12
+ANSWER: D
+
+Which class adds zebra-stripes to a table?
+A. .table-bordered
+B. .table-striped
+C. .table-zebra
+D. .even and .odd
+ANSWER: D
+
+Which class shapes an image to a circle?
+A. .rounded-circle
+B. .img-rounded
+C. .img-circle
+D. .img-round
+ANSWER: D
+
+Which class is used to create a big box for calling extra attention?
+A. .jumbotron
+B. There is no such class
+C. .container
+D. .bigbox
+ANSWER: D
+
+Which class is used to create a button group?
+A. .group-button
+B. .btn-group
+C. .button-group
+D. .group-btn
+ANSWER: D
+
+Which button class is used to create a large button?
+A. .btn-lg
+B. .btn-l2
+C. .btn-l
+D. .btn-large
+ANSWER: D
+
+Which class is used to create a badge?
+A. .badge-label
+B. .label-badge
+C. .badge
+D. .badge-item
+ANSWER: D
+
+Which class is used to create a loader?
+A. .spinner-loader
+B. .spinner
+C. .loader
+D. .spinner-border
+ANSWER: D
+
+Which class is used to create a basic pagination?
+A. .pagination
+B. .navigation
+C. .page
+D. .pages
+ANSWER: D
+
+Which class is used to create a basic list group?
+A. .list-group
+B. .group-list
+C. .grouped-list
+ANSWER: D
+
+Which class adds a heading to a card?
+A. .card-footer
+B. .card-head
+C. .card-heading
+D. .card-header
+ANSWER: D
+
+Which class indicates a dropdown menu?
+A. .select
+B. .dropdown
+C. .dropdown-list
+ANSWER: D
+
+Which class is used to create a vertical navigation bar?
+A. .navbar navbar-vertical
+B. .navbar
+C. .navbar-inverse
+D. .navbar-vertical
+ANSWER: D
+
+Which component is used to cycle through elements, like a slideshow?
+A. Orbit
+B. Slideshow
+C. Scrollspy
+D. Carousel
+ANSWER: D
+
+Which contextual class indicates a succesful or positive action?
+A. .bg-info
+B. .bg-primary
+C. .bg-warning
+D. .bg-success
+ANSWER: D
+
+Which contextual class indicates a dangerous or potentially negative action?
+A. .bg-dark
+B. .bg-primary
+C. .bg-info
+D. .bg-danger
+ANSWER: D
+
+Which class indicates uppercased text?
+A. .uppercase
+B. .text-capitalize
+C. .ucase
+D. .text-uppercase
+ANSWER: D
+
+Which attribute is used to create a tooltip?
+A. data-bs-toggle="popup"
+B. data-bs-toggle="collapse"
+C. data-bs-toggle="modal"
+D. data-bs-toggle="tooltip"
+ANSWER: D
+
+A standard navigation tab is created with:
+A. <ul class="nav tabs">
+B. <ul class="nav nav-navbar">
+C. <ul class="navigation-tabs">
+D. <ul class="nav nav-tabs">
+ANSWER: D
+
+A standard navigation bar is created with:
+A. <nav class="navigationbar navbar-default">
+B. <nav class="navbar navbar-default">
+C. <nav class="nav navbar">
+D. <nav class="navbar navbar-expand-sm">
+ANSWER: D
+
+Which class is used to style a close icon?
+A. .btn-x
+B. .close-icon
+C. .x
+D. .btn-close
+ANSWER: D
+
+Which class can be used to float an element to the right of the page?
+A. .float-end
+B. .float-right
+C. .float-r
+D. .float-start
+ANSWER: D

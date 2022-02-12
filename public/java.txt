@@ -1,0 +1,162 @@
+What is a correct syntax to output "Hello World" in Java?
+A. print ("Hello World");
+B. echo("Hello World");
+C. Console.WriteLine("Hello World");
+D. System.out.println("Hello World");
+ANSWER: D
+
+Java is short for "JavaScript".
+A. True
+B. False
+ANSWER: D
+
+How do you insert COMMENTS in Java code?
+A. # This is a comment
+B. // This is a comment
+C. /* This is a comment
+ANSWER: D
+
+Which data type is used to create a variable that should store text?
+A. myString
+B. String
+C. string
+D. Txt
+ANSWER: D
+
+How do you create a variable with the numeric value 5?
+A. x = 5;
+B. num x = 5
+C. int x = 5;
+D. float x = 5;
+ANSWER: D
+
+How do you create a variable with the floating number 2.8?
+A. x = 2.8f;
+B. float x = 2.8f;
+C. byte x = 2.8f
+D. int x = 2.8f;
+ANSWER: D
+
+Which method can be used to find the length of a string?
+A. length()
+B. getSize()
+C. getLength()
+D. len()
+ANSWER: D
+
+Which operator is used to add together two values?
+A. The * sign
+B. The + sign
+C. The & sign
+ANSWER: D
+
+The value of a string variable can be surrounded by single quotes.
+A. True
+B. False
+ANSWER: D
+
+Which method can be used to return a string in upper case letters?
+A. tuc()
+B. upperCase()
+C. toUpperCase()
+D. touppercase()
+ANSWER: D
+
+Which operator can be used to compare two values?
+A. ==
+B. <>
+C. ><
+D. =
+ANSWER: D
+
+To declare an array in Java, define the variable type with:
+A. {}
+B. ()
+C. []
+ANSWER: D
+
+Array indexes start with:
+A. 0
+B. 1
+ANSWER: D
+
+How do you create a method in Java?
+A. methodName()
+B. methodName[]
+C. methodName.
+D. (methodName)
+ANSWER: D
+
+How do you call a method in Java?
+A. (methodName);
+B. methodName[];
+C. methodName();
+D. methodName;
+ANSWER: D
+
+Which keyword is used to create a class in Java?
+A. className
+B. class()
+C. class
+D. MyClass
+ANSWER: D
+
+What is the correct way to create an object called myObj of MyClass?
+A. MyClass myObj = new MyClass();
+B. new myObj = MyClass();
+C. class MyClass = new myObj();
+D. class myObj = new MyClass();
+ANSWER: D
+
+In Java, it is possible to inherit attributes and methods from one class to another.
+A. False
+B. True
+ANSWER: D
+
+Which method can be used to find the highest value of x and y?
+A. Math.max(x,y)
+B. Math.maxNum(x,y)
+C. Math.maximum(x,y)
+D. Math.largest(x,y)
+ANSWER: D
+
+Which operator is used to multiply numbers?
+A. #
+B. %
+C. *
+D. x
+ANSWER: D
+
+Which keyword is used to import a package from the Java API library?
+A. getlib
+B. package
+C. import
+D. lib
+ANSWER: D
+
+How do you start writing an if statement in Java?
+A. if x > y then:
+B. if (x > y)
+C. if x > y:
+ANSWER: D
+
+How do you start writing a while loop in Java?
+A. x > y while {
+B. while x > y {
+C. while x > y:
+D. while (x > y)
+ANSWER: D
+
+Which keyword is used to return a value inside a method?
+A. get
+B. break
+C. return
+D. void
+ANSWER: D
+
+Which statement is used to stop a loop?
+A. stop
+B. exit
+C. return
+D. break
+ANSWER: D
