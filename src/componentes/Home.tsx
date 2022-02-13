@@ -1,8 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useNavigate } from 'react-router-dom'
+import { isSignInWithEmailLink, signInWithEmailLink, signOut, User } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+
+
 const navigation: any[] = []
 const navigation1 = [
     { name: 'Product', href: '#' },
@@ -13,9 +17,40 @@ const navigation1 = [
 
 export default function Home() {
     const navigate = useNavigate()
-    function goToDashboard(){
+    const auth = getAuth();
+    const [user, setUser] = useState<User>()
+    function goToDashboard() {
         navigate('/dashboard')
     }
+    function logout() {
+        signOut(auth);
+        navigate('/')
+    }
+    function login() {
+        const provider = new GoogleAuthProvider();
+
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential: any = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                // setUser(user)
+                goToDashboard()
+                // ...
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+    }
+
     return (
         <div className="relative bg-gray-50 overflow-hidden">
             <div className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
@@ -96,12 +131,24 @@ export default function Home() {
                             </div>
                             <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                                 <span className="inline-flex rounded-md shadow">
-                                    <a  onClick={()=> goToDashboard()}
+
+
+                                    {user && <a onClick={() => logout()}
+                                        href="#"
+                                        className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
+                                    >
+                                        {user.email}
+                                    </a>
+                                    }
+
+
+                                    {!user && <a onClick={() => login()}
                                         href="#"
                                         className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
                                     >
                                         Log in
                                     </a>
+                                    }
                                 </span>
                             </div>
                         </nav>
@@ -147,12 +194,21 @@ export default function Home() {
                                         </a>
                                     ))}
                                 </div>
-                                <a  onClick={()=> goToDashboard()}
+                                {user && <a onClick={() => logout()}
+                                    href="#"
+                                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                                >
+                                    {user.email}
+                                </a>
+                                }
+
+                                {!user && <a onClick={() => login()}
                                     href="#"
                                     className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                                 >
                                     Log in
                                 </a>
+                                }
                             </div>
                         </Popover.Panel>
                     </Transition>
@@ -174,9 +230,9 @@ export default function Home() {
                             El objetivo es partiendo de 0 llegar a realizar pequeños programas prácticos que permitan comprender como funciona la programación y como se puede aplicar a problemas reales
                         </p>
                         <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                            Dias 4,5, de marzo
+                            Marzo: 4, 5, 11, 12, 18, 19, 25, 26 <br />            Abril 1, 2, 8, 9
                         </p>
-
+                        <pre>{JSON.stringify(user)}</pre>
                         <div className=" invisible mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                             <div className="rounded-md shadow">
                                 <a

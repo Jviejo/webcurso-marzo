@@ -1,5 +1,6 @@
 import { doc, getDoc } from "firebase/firestore";
 import { Fragment, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { db } from "../main";
 
 function createMarkup(cadena: any) {
@@ -7,13 +8,13 @@ function createMarkup(cadena: any) {
         __html: cadena
     };
 }
-export default function Calendario() {
+export default function Dinamico() {
+    const params = useParams()
     const [contenido, setContenido] = useState<string>("")
     useEffect(() => {
-        const docRef = doc(db, "statics", "calendario.html");
+        const docRef = doc(db, "statics", ""+ params.fichero);
         const docSnap = async () => await getDoc(docRef);
         docSnap().then((data: any) => {
-            console.log(data.data().data)
             setContenido(data.data().data)
         })
     })

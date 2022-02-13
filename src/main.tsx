@@ -20,6 +20,7 @@ import Sesion from './componentes/Sesion';
 import Calendario from './componentes/Calendario';
 import Evaluacion from './componentes/Evaluacion';
 import { Quizz } from './componentes/Quizz';
+import Dinamico from './componentes/Dinamico';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -38,7 +39,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFirestore(app);
+export const db = getFirestore(app);
 
 
 ReactDOM.render(
@@ -50,7 +51,7 @@ ReactDOM.render(
         <Route path="curso" element={<Curso />} >
           
           <Route path="evaluacion" element={<Evaluacion />} />
-          <Route path="calendario" element={<Calendario />} />
+          <Route path="dinamico/:fichero" element={<Dinamico />} />
           <Route path="sesion" element={<Sesion />} />
           <Route path="quizz/:name" element={<Quizz />} />
           <Route index element={<Calendario />} />

@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Link } from 'react-router-dom'
+import { getAuth } from 'firebase/auth'
 
 const user = {
     name: 'Tom Cook',
@@ -27,6 +28,7 @@ function classNames(...classes: any[]) {
 }
 
 export default function Dashboard() {
+    const auth = getAuth();
     return (
         <>
             {/*
@@ -88,7 +90,8 @@ export default function Dashboard() {
                                             <div>
                                                 <Menu.Button className="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                                     <span className="sr-only">Open user menu</span>
-                                                    <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                                                    {/* <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" /> */}
+                                                    {getAuth().currentUser?.email}
                                                 </Menu.Button>
                                             </div>
                                             <Transition
@@ -156,7 +159,8 @@ export default function Dashboard() {
                                 <div className="pt-4 pb-3 border-t border-gray-200">
                                     <div className="flex items-center px-4">
                                         <div className="flex-shrink-0">
-                                            <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                                            {/* <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" /> */}
+
                                         </div>
                                         <div className="ml-3">
                                             <div className="text-base font-medium text-gray-800">{user.name}</div>
@@ -199,7 +203,8 @@ export default function Dashboard() {
                             {/* Replace with your content */}
                             <div className="px-4 py-8 sm:px-0">
                                 <div className="border-4 border-dashed border-gray-200 rounded-lg h-96 p-4" >
-                                    <Link to="/curso">Curso de Iniciación a la Programación </Link>
+                                    <Link to="/curso">
+                                        <a href="#" className='text-2xl underline' >Curso de Iniciación a la Programación </a></Link>
                                 </div>
                             </div>
                             {/* /End replace */}

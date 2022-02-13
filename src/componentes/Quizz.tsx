@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { db } from '../main'
+import { doc, getDoc } from "firebase/firestore";
+import { getAuth } from 'firebase/auth';
 export function Quizz() {
-    const params = useParams()
 
+    const params = useParams()
+    const auth = getAuth();
     const generateState = (lista: any) => {
         return lista.map((q: any, ndx: any) => {
             return {
@@ -17,11 +21,17 @@ export function Quizz() {
 
     const [state, setState] = React.useState<any>()
     useEffect(() => {
-        fetch('/' + params.name + '.txt').then(response => response.text()).then(text => {
-            //console.log(text)
-            //console.log(text.split("\n\n"))
-            setState(generateState(text.split("\n\n").filter(i => i !== '')))
+        const docRef = doc(db, "quizzes", ""+params.name);
+        const docSnap = async () => await getDoc(docRef);
+        docSnap().then((data: any) => {
+            console.log(data.data().data)
+            setState(generateState(data.data().data.split("\n\n").filter((i: string) => i !== '')))
         })
+        // fetch('/' + params.name + '.txt').then(response => response.text()).then(text => {
+        //     //console.log(text)
+        //     //console.log(text.split("\n\n"))
+        //     setState(generateState(text.split("\n\n").filter(i => i !== '')))
+        // })
     }, [params.name])
 
     const updateState = (id: any, answer: any) => {
@@ -34,7 +44,9 @@ export function Quizz() {
     const modoHidden = false;
     return (
         <article className="prose lg:prose-xl">
+            {/* {JSON.stringify(state)} */}
             <h1>{params.name} quizz, {state.length} preguntas</h1>
+            <h3>{auth.currentUser?.email}</h3>
             {
                 state.map((q: any, indice: number) =>
                     <div key={indice}>

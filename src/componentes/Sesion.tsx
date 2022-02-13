@@ -1,28 +1,37 @@
+import { doc, getDoc } from "firebase/firestore";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-export default function Sesion() {
-    return <article className="prose lg:prose-xl">
-        <h1>Introdución</h1>
-        <h2>Objetivos de la sesión</h2>
-        <ul>
-            <li>Definir los elementos que son necesarios para empezar en la programación</li>
-            <li>Empezar con el HTML, base de la construción de páginas web</li>
-            <li>Practicar con las hojas de estilo en cascada</li>
-        </ul>
-        <h2>Contenidos</h2>
-        <ul>
-            <li><a href="https://docs.google.com/document/d/1Ibkao-MZSDVoX4_V7rAzQHiEBwlw-YoC/edit?usp=sharing&ouid=116269000545785053716&rtpof=true&sd=true" target="_blank">01_01 HTML BASICO</a></li>
-            <li><a href="https://docs.google.com/document/d/1bWlZkFgd5uv6MT17YNnfjKGy3XdpkPoE/edit?usp=sharing&ouid=116269000545785053716&rtpof=true&sd=true" target="_blank">01_10 HTML_ESTRUCTURA</a></li>
-            <li><a href="https://docs.google.com/document/d/17SF4XkxUkAF_NXpQrl2n3f7s6vgUzn44/edit?usp=sharing&ouid=116269000545785053716&rtpof=true&sd=true" target="_blank">01_20 HTML FORM</a></li>
-            <li><a href="https://docs.google.com/document/d/1x6nKoW-ttXffzNYg9wMSfVex2iWsoGsi/edit?usp=sharing&ouid=116269000545785053716&rtpof=true&sd=true" target="_blank">01_30 HTML_MULTIMEDIA</a></li>
-            <li><a href="https://docs.google.com/document/d/1v6dXLWe9jeTsB8U4imRwZ1AVLpokOijC/edit?usp=sharing&ouid=116269000545785053716&rtpof=true&sd=true" target="_blank">02_01 CSS BASICO</a></li>
-        </ul>
-
-        <h2>Cuestionarios</h2>
-        <ul>
-            <li><Link to="/curso/quizz/html" >html</Link></li>
-        </ul>
-
-    </article>
+import { db } from "../main";
+function createMarkup(cadena: any) {
+    return {
+        __html: cadena
+    };
 }
 
+export default function Sesion() {
+    const [contenido, setContenido] = useState<string>("")
+    useEffect(() => {
+        const docRef = doc(db, "statics", "s1.html");
+        const docSnap = async () => await getDoc(docRef);
+        docSnap().then((data: any) => {
+            console.log(data.data().data)
+            setContenido(data.data().data)
+        })
+    })
+
+    return <article className="prose lg:prose-xl">
+        {contenido && <span dangerouslySetInnerHTML={createMarkup(contenido)}></span>}
+        <h2>Cuestionarios</h2>
+        <ul>
+        <li>
+                <Link to="/curso/quizz/html">html</Link>
+            </li>
+            <li>
+                <Link to="/curso/quizz/css">css</Link>
+            </li>
+            <li>
+                <Link to="/curso/quizz/bs5">css bootstrap</Link>
+            </li>
+        </ul>
+    </article>
+}
