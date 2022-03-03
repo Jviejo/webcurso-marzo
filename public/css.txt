@@ -3,64 +3,64 @@ A. Cascading Style Sheets
 B. Creative Style Sheets
 C. Colorful Style Sheets
 D. Computer Style Sheets
-ANSWER: D
+ANSWER: A
 
 What is the correct HTML for referring to an external style sheet?
 A. <style src="mystyle.css">
 B. <stylesheet>mystyle.css</stylesheet>
 C. <link rel="stylesheet" type="text/css" href="mystyle.css">
-ANSWER: D
+ANSWER: C
 
 Where in an HTML document is the correct place to refer to an external style sheet?
 A. In the <head> section
 B. At the end of the document
 C. In the <body> section
-ANSWER: D
+ANSWER: A
 
 Which HTML tag is used to define an internal style sheet?
 A. <style>
 B. <script>
 C. <css>
-ANSWER: D
+ANSWER: A
 
 Which HTML attribute is used to define inline styles?
 A. style
 B. styles
 C. font
 D. class
-ANSWER: D
+ANSWER: A
 
 Which is the correct CSS syntax?
 A. body {color: black;}
 B. {body;color:black;}
 C. body:color=black;
 D. {body:color=black;}
-ANSWER: D
+ANSWER: A
 
 How do you insert a comment in a CSS file?
 A. ' this is a comment
 B. // this is a comment
 C. /* this is a comment */
 D. // this is a comment //
-ANSWER: D
+ANSWER: C
 
 Which property is used to change the background color?
 A. bgcolor
 B. background-color
 C. color
-ANSWER: D
+ANSWER: B
 
 How do you add a background color for all <h1> elements?
 A. h1.all {background-color:#FFFFFF;}
 B. all.h1 {background-color:#FFFFFF;}
 C. h1 {background-color:#FFFFFF;}
-ANSWER: D
+ANSWER: C
 
 Which CSS property is used to change the text color of an element?
 A. fgcolor
 B. text-color
 C. color
-ANSWER: D
+ANSWER: C
 
 Which CSS property controls the text size?
 A. text-size
@@ -81,62 +81,50 @@ A. a {text-decoration:no-underline;}
 B. a {underline:none;}
 C. a {text-decoration:none;}
 D. a {decoration:no-underline;}
-ANSWER: D
+ANSWER: C
 
 How do you make each word in a text start with a capital letter?
 A. You can't do that with CSS
 B. text-transform:capitalize
 C. transform:capitalize
 D. text-style:capitalize
-ANSWER: D
+ANSWER: C
 
 Which property is used to change the font of an element?
 A. font-family
 B. font-style
 C. font-weight
-ANSWER: D
+ANSWER: A
 
 How do you make the text bold?
 A. style:bold;
 B. font-weight:bold;
 C. font:bold;
-ANSWER: D
-
-How do you display a border like this:
-
-The top border = 10 pixels
-The bottom border = 5 pixels
-The left border = 20 pixels
-The right border = 1pixel?
-A. border-width:10px 1px 5px 20px;
-B. border-width:10px 5px 20px 1px;
-C. border-width:10px 20px 5px 1px;
-D. border-width:5px 20px 10px 1px;
-ANSWER: D
+ANSWER: B
 
 Which property is used to change the left margin of an element?
 A. margin-left
 B. padding-left
 C. indent
-ANSWER: D
+ANSWER: A
 
 When using the padding property; are you allowed to use negative values?
 A. Yes
 B. No
-ANSWER: D
+ANSWER: A
 
 How do you make a list that lists its items with squares?
 A. list: square;
 B. list-type: square;
 C. list-style-type: square;
-ANSWER: D
+ANSWER: C
 
 How do you select an element with id 'demo'?
 A. #demo
 B. .demo
 C. demo
 D. *demo
-ANSWER: D
+ANSWER: A
 
 How do you select elements with class name 'test'?
 A. #test
@@ -149,17 +137,17 @@ How do you select all p elements inside a div element?
 A. div.p
 B. div + p
 C. div p
-ANSWER: D
+ANSWER: C
 
 How do you group selectors?
 A. Separate each selector with a space
 B. Separate each selector with a comma
 C. Separate each selector with a plus sign
-ANSWER: D
+ANSWER: A
 
 What is the default value of the position property?
 A. static
 B. absolute
 C. relative
 D. fixed
-ANSWER: D
+ANSWER: A

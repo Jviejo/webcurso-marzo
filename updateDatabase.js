@@ -46,8 +46,8 @@ async function writeStatic() {
     })
   }
 }
-//writeQuizz().then(console.log)
+writeQuizz().then(console.log)
 
 //writeAlumnos().then(console.log)
 
-writeStatic().then(console.log)
+//writeStatic().then(console.log)
